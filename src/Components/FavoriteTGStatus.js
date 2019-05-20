@@ -34,8 +34,18 @@ export default class FavoriteTGStatus extends React.Component {
     }
 
     render(){
+        const urlroot = 'https://brandmeister.network/?page=lh&jsonquery={%22condition%22%3A%22OR%22%2C%22rules%22%3A[{%22id%22%3A%22DestinationID%22%2C%22field%22%3A%22DestinationID%22%2C%22type%22%3A%22integer%22%2C%22input%22%3A%22text%22%2C%22operator%22%3A%22equal%22%2C%22value%22%3A%22';
         return (
-            <div><a href={this.state.fullUrl} target="_blank">Last Heard for All Favorites</a></div>
+            <>
+                <ul style={{listStyleType:"none"}}>
+                    {this.state.favoriteTGs.map(item => {
+                        return (
+                            <li><a href={urlroot + item.ID + '%22}]}'} target="_blank" style={{color:'white'}}>{item.ID} - {item.name}</a></li>
+                        )
+                    })}
+                </ul>
+                <a href={this.state.fullUrl} target="_blank" style={{color:'white'}}>Last Heard for All Favorites</a>
+            </>
         );
     };
 };
