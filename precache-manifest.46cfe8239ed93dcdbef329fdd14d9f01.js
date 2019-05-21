@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd1509f86c9474547e89aa04725fd105",
+    "revision": "bf26bad835d3c08ad259dd9d24d1a3a1",
     "url": "/dmrdashboard/index.html"
   },
   {
-    "revision": "6ab0d57a5f4aeefdd330",
+    "revision": "3566ac304087be2beeff",
     "url": "/dmrdashboard/static/css/main.2cce8147.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dmrdashboard/static/js/2.4e81ba5b.chunk.js"
   },
   {
-    "revision": "6ab0d57a5f4aeefdd330",
-    "url": "/dmrdashboard/static/js/main.f186ead6.chunk.js"
+    "revision": "3566ac304087be2beeff",
+    "url": "/dmrdashboard/static/js/main.17e158b8.chunk.js"
   },
   {
     "revision": "18d71d098a62f8ac3e3a",
