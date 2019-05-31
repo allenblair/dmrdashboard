@@ -2,6 +2,15 @@ import React from 'react';
 import { Card, CardBody, CardText, CardTitle, Col, Row, Table } from 'reactstrap';
 
 const FavoritesCard = props => {
+
+    let temp = [];
+    props.category.forEach(item => {
+        temp.push(props.buildTalkgroupRule(item.ID));
+    });
+    const jsonquery = {
+        "condition":"OR",
+        "rules":temp
+    };
     return (
         <Card body>
             <CardTitle>{props.title}</CardTitle>
@@ -15,6 +24,7 @@ const FavoritesCard = props => {
                         })}
                     </tbody>
                 </Table>
+                <p><a href={props.baseurl + JSON.stringify(jsonquery)} target="_blank">Last Heard for All {props.title}</a></p>
                 
             </CardBody>
         </Card>        

@@ -67,7 +67,9 @@ export default class FavoriteTGStatus extends React.Component {
                                 <FavoritesCard style={{maxWidth:400}}
                                     category={this.state.favoriteTGs.filter(item => item.category === category)}
                                     urlroot={urlroot}
-                                    title={category} />
+                                    title={category}
+                                    buildTalkgroupRule={this.buildTalkgroupRule}
+                                    baseurl={this.state.baseurl} />
                         )
                     })}
                 </Row>
