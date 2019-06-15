@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/dmrdashboard/static/css/main.2f85f057.chunk.css",
-    "main.js": "/dmrdashboard/static/js/main.441cd447.chunk.js",
-    "main.js.map": "/dmrdashboard/static/js/main.441cd447.chunk.js.map",
+    "main.js": "/dmrdashboard/static/js/main.e0a74765.chunk.js",
+    "main.js.map": "/dmrdashboard/static/js/main.e0a74765.chunk.js.map",
     "runtime~main.js": "/dmrdashboard/static/js/runtime~main.582b4f17.js",
     "runtime~main.js.map": "/dmrdashboard/static/js/runtime~main.582b4f17.js.map",
     "static/js/2.7c1f2196.chunk.js": "/dmrdashboard/static/js/2.7c1f2196.chunk.js",
     "static/js/2.7c1f2196.chunk.js.map": "/dmrdashboard/static/js/2.7c1f2196.chunk.js.map",
     "index.html": "/dmrdashboard/index.html",
-    "precache-manifest.1ed43293eebc01edb64c0457a67a1909.js": "/dmrdashboard/precache-manifest.1ed43293eebc01edb64c0457a67a1909.js",
+    "precache-manifest.fcea84fea5c3231732f76bf582372dc2.js": "/dmrdashboard/precache-manifest.fcea84fea5c3231732f76bf582372dc2.js",
     "service-worker.js": "/dmrdashboard/service-worker.js",
     "static/css/main.2f85f057.chunk.css.map": "/dmrdashboard/static/css/main.2f85f057.chunk.css.map",
     "static/media/logo.svg": "/dmrdashboard/static/media/logo.5d5d9eef.svg"
