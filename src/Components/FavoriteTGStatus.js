@@ -11,8 +11,10 @@ export default class FavoriteTGStatus extends React.Component {
         this.state = {
             baseurl: 'https://brandmeister.network/?page=lh&jsonquery=',
             jsonquery: {},
+            staticQuery: {},
             favoriteTGs: favoriteTGs,
-            fullUrl: ""
+            fullUrl: "",
+            staticUrl: ""
         }
         this.buildTalkgroupRule = this.buildTalkgroupRule.bind(this);
     }
@@ -23,16 +25,23 @@ export default class FavoriteTGStatus extends React.Component {
 
     componentDidMount(){
         let temp = [];
+        let statics = [];
         this.state.favoriteTGs.forEach(item => {
             temp.push(this.buildTalkgroupRule(item.ID));
+            if (item.static) {statics.push(this.buildTalkgroupRule(item.ID))}
         });
         const jsonquery = {
             "condition":"OR",
             "rules":temp
         };
+        const staticQuery = {
+            "condition":"OR",
+            "rules": statics
+        }
         console.log(this.state.baseurl + JSON.stringify(jsonquery));
         this.setState({
-            fullUrl: this.state.baseurl + JSON.stringify(jsonquery)
+            fullUrl: this.state.baseurl + JSON.stringify(jsonquery),
+            staticUrl: this.state.baseurl + JSON.stringify(staticQuery)
         });
     }
 
@@ -41,7 +50,7 @@ export default class FavoriteTGStatus extends React.Component {
         const categories = ["Alabama","National","States","Regional","International","Cities","Other/Topics"];
         return (
             <>
-                <h5 className="text-center"><a href={this.state.fullUrl} target="_blank">Last Heard for All Favorites</a></h5>
+                <h5 className="text-center"><a href={this.state.fullUrl} target="_blank">Last Heard for All Favorites</a> | <a href={this.state.staticUrl} target="_blank">Last Heard for Statics</a></h5>
                 <Row>
                     <Card body style={{maxWidth:400}}>
                         <CardTitle>Repeaters</CardTitle>

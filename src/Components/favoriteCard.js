@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardBody, CardText, CardTitle, Col, Row, Table } from 'reactstrap';
+import { Badge, Card, CardBody, CardText, CardTitle, Col, Row, Table } from 'reactstrap';
 
 const FavoritesCard = props => {
 
@@ -19,7 +19,7 @@ const FavoritesCard = props => {
                     <tbody>
                         {props.category.map(item => {
                             return (
-                                <tr><td>{item.ID}</td><td><a href={props.urlroot + item.ID + '%22}]}'} target="_blank">{item.name}</a></td></tr>
+                                <tr><td>{item.ID}</td><td><a href={props.urlroot + item.ID + '%22}]}'} target="_blank">{item.name}</a>{item.static ? <Badge color="primary" style={{marginLeft:5}}>Static</Badge> : ""}</td></tr>
                             )
                         })}
                     </tbody>
