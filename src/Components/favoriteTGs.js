@@ -7,6 +7,13 @@ const favoriteTGs = [
     {"name":"TAC-310 USA DMRX Bridge","category":"National","ID":310},
     {"name":"TAC-311 USA DMRX Bridge","category":"National","ID":311},
     {"name":"TAC-312 USA DMRX Bridge","category":"National","ID":312},
+    {"name":"TAC-313 USA","category":"National","ID":313},
+    {"name":"TAC-314 USA","category":"National","ID":314},
+    {"name":"TAC-315 USA","category":"National","ID":315},
+    {"name":"TAC-316 USA","category":"National","ID":316},
+    {"name":"TAC-317 USA","category":"National","ID":317},
+    {"name":"TAC-318 USA","category":"National","ID":318},
+    {"name":"TAC-319 USA","category":"National","ID":319},
     {"name":"Israel","category":"International","ID":425},
     {"name":"Nationwide","category":"National","ID":3100},
     {"name":"Alabama","category":"Alabama","ID":3101,"static":true},
@@ -46,13 +53,17 @@ const favoriteTGs = [
     {"name":"The Light","category":"Other/Topics","ID":31479,"static":true},
     {"name":"USA - 4","category":"Regional","ID":31604},
     {"name":"DMR Info","category":"Other/Topics","ID":31648},
+    {"name":"America Link","category":"National","ID":31656},
     {"name":"PI-Star Chat","category":"Other/Topics","ID":31672},
-    {"name":"Gigaparts","category":"Other/Topics","ID":31695,"static":true},
-    {"name":"Liberty","category":"Other/Topics","ID":31776,"static":true},
+    {"name":"Gigaparts","category":"Other/Topics","ID":31695,"static":false},
+    {"name":"Liberty","category":"Other/Topics","ID":31776,"static":false},
     {"name":"Sheffield Local","category":"Alabama","ID":310128},
     {"name":"Jonesboro Local","category":"Cities","ID":310514,"static":true},
     {"name":"Memphis Local","category":"Cities","ID":314706},
-    {"name":"Reddit","category":"Other/Topics","ID":98003}
+    {"name":"Reddit","category":"Other/Topics","ID":98003},
+    {"name":"AE4G","category":"Personal TG","ID":3138607},
+    {"name":"AB4CD","category":"Personal TG","ID":3138700}
+
 ];
 
 export default favoriteTGs;

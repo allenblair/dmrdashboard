@@ -27,7 +27,7 @@ export default class FavoriteTGStatus extends React.Component {
         let temp = [];
         let statics = [];
         this.state.favoriteTGs.forEach(item => {
-            temp.push(this.buildTalkgroupRule(item.ID));
+            if (item.category !== "International" && (item.ID < 310 || item.ID > 319)) {temp.push(this.buildTalkgroupRule(item.ID))}
             if (item.static) {statics.push(this.buildTalkgroupRule(item.ID))}
         });
         const jsonquery = {
@@ -47,10 +47,14 @@ export default class FavoriteTGStatus extends React.Component {
 
     render(){
         const urlroot = 'https://brandmeister.network/?page=lh&jsonquery={%22condition%22%3A%22OR%22%2C%22rules%22%3A[{%22id%22%3A%22DestinationID%22%2C%22field%22%3A%22DestinationID%22%2C%22type%22%3A%22integer%22%2C%22input%22%3A%22text%22%2C%22operator%22%3A%22equal%22%2C%22value%22%3A%22';
-        const categories = ["Alabama","National","States","Regional","International","Cities","Other/Topics"];
+        const categories = ["Alabama","National","States","Regional","International","Cities","Other/Topics","Personal TG"];
         return (
             <>
-                <h5 className="text-center"><a href={this.state.fullUrl} target="_blank">Last Heard for All Favorites</a> | <a href={this.state.staticUrl} target="_blank">Last Heard for Statics</a></h5>
+                <h5 className="text-center">
+                    <a href={this.state.fullUrl} target="_blank">Last Heard for Main Favorites</a>
+                    &nbsp;|&nbsp;
+                    <a href={this.state.staticUrl} target="_blank">Last Heard for Statics</a> 
+                </h5>
                 <Row>
                     <Card body style={{maxWidth:400}}>
                         <CardTitle>Repeaters</CardTitle>
