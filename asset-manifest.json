@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/dmrdashboard/static/css/main.1895e133.chunk.css",
-    "main.js": "/dmrdashboard/static/js/main.419af571.chunk.js",
-    "main.js.map": "/dmrdashboard/static/js/main.419af571.chunk.js.map",
+    "main.js": "/dmrdashboard/static/js/main.bde05c27.chunk.js",
+    "main.js.map": "/dmrdashboard/static/js/main.bde05c27.chunk.js.map",
     "runtime~main.js": "/dmrdashboard/static/js/runtime~main.582b4f17.js",
     "runtime~main.js.map": "/dmrdashboard/static/js/runtime~main.582b4f17.js.map",
     "static/js/2.a137b09d.chunk.js": "/dmrdashboard/static/js/2.a137b09d.chunk.js",
     "static/js/2.a137b09d.chunk.js.map": "/dmrdashboard/static/js/2.a137b09d.chunk.js.map",
     "index.html": "/dmrdashboard/index.html",
-    "precache-manifest.22371221b3557192d0162543946fa1aa.js": "/dmrdashboard/precache-manifest.22371221b3557192d0162543946fa1aa.js",
+    "precache-manifest.56565eb2e38db6490c202d9d5182adca.js": "/dmrdashboard/precache-manifest.56565eb2e38db6490c202d9d5182adca.js",
     "service-worker.js": "/dmrdashboard/service-worker.js",
     "static/css/main.1895e133.chunk.css.map": "/dmrdashboard/static/css/main.1895e133.chunk.css.map",
     "static/media/logo.svg": "/dmrdashboard/static/media/logo.ee7cd8ed.svg"
