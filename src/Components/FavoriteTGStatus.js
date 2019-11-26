@@ -12,9 +12,11 @@ export default class FavoriteTGStatus extends React.Component {
             baseurl: 'https://brandmeister.network/?page=lh&jsonquery=',
             jsonquery: {},
             staticQuery: {},
+            statesQuery: {},
             favoriteTGs: favoriteTGs,
             fullUrl: "",
-            staticUrl: ""
+            staticUrl: "",
+            statesUrl: ""
         }
         this.buildTalkgroupRule = this.buildTalkgroupRule.bind(this);
     }
@@ -26,10 +28,18 @@ export default class FavoriteTGStatus extends React.Component {
     componentDidMount(){
         let temp = [];
         let statics = [];
+        let states = [];
         this.state.favoriteTGs.forEach(item => {
             if (item.category !== "International" && (item.ID < 310 || item.ID > 319)) {temp.push(this.buildTalkgroupRule(item.ID))}
             if (item.static) {statics.push(this.buildTalkgroupRule(item.ID))}
         });
+        let i;
+        let swExclude = [3103,3107,3114,3143,3152];
+        for (i=3101;i<=3147;i++){
+            if(!swExclude.includes(i)){
+                states.push(this.buildTalkgroupRule(i));
+            }
+        }
         const jsonquery = {
             "condition":"OR",
             "rules":temp
@@ -38,10 +48,15 @@ export default class FavoriteTGStatus extends React.Component {
             "condition":"OR",
             "rules": statics
         }
+        const statesQuery = {
+            "condition":"OR",
+            "rules": states
+        }
         console.log(this.state.baseurl + JSON.stringify(jsonquery));
         this.setState({
             fullUrl: this.state.baseurl + JSON.stringify(jsonquery),
-            staticUrl: this.state.baseurl + JSON.stringify(staticQuery)
+            staticUrl: this.state.baseurl + JSON.stringify(staticQuery),
+            statesUrl: this.state.baseurl + JSON.stringify(statesQuery)
         });
     }
 
@@ -54,6 +69,9 @@ export default class FavoriteTGStatus extends React.Component {
                     <a href={this.state.fullUrl} target="_blank">Last Heard for Main Favorites</a>
                     &nbsp;|&nbsp;
                     <a href={this.state.staticUrl} target="_blank">Last Heard for Statics</a> 
+                </h5>
+                <h5 className="text-center">
+                    <a href={this.state.statesUrl} target="_blank">Last Heard for All US Statewides</a>
                 </h5>
                 <Row>
                     <Card body style={{maxWidth:400}}>

@@ -34,7 +34,7 @@ const favoriteTGs = [
     {"name":"Alert-K4NWS","category":"Alabama","ID":31013,"static":true},    
     {"name":"HSV","category":"Alabama","ID":31014,"static":true},
     {"name":"Central Alabama","category":"Alabama","ID":31015,"static":true},
-    {"name":"NW Alabama","category":"Alabama","ID":31016,"static":true},
+    {"name":"NW Alabama","category":"Alabama","ID":31016,"static":false},
     {"name":"Southern California","category":"Cities","ID":31066},
     {"name":"BayNet","category":"Cities","ID":31075},
     {"name":"Atlanta Metro","category":"Cities","ID":31131},
