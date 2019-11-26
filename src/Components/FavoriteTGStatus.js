@@ -35,7 +35,7 @@ export default class FavoriteTGStatus extends React.Component {
         });
         let i;
         let swExclude = [3103,3107,3114,3143,3152];
-        for (i=3101;i<=3147;i++){
+        for (i=3101;i<=3156;i++){
             if(!swExclude.includes(i)){
                 states.push(this.buildTalkgroupRule(i));
             }
