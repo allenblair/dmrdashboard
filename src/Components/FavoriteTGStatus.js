@@ -3,6 +3,7 @@ import favoriteTGs from './favoriteTGs';
 import repeaters from './repeaters';
 import FavoritesCard from './favoriteCard';
 import { Card, CardBody, CardTitle, Row, Table } from 'reactstrap';
+import RepeaterList from './repeaterList';
 
 export default class FavoriteTGStatus extends React.Component {
 
@@ -73,26 +74,10 @@ export default class FavoriteTGStatus extends React.Component {
                 <h5 className="text-center">
                     <a href={this.state.statesUrl} target="_blank">Last Heard for All US Statewides</a>
                 </h5>
-                <Row>
-                    <Card body style={{maxWidth:400}}>
-                        <CardTitle>Repeaters</CardTitle>
-                        <CardBody>
-                            <Table size="sm">
-                                <tbody>
-                                    {repeaters.map(item => {
-                                        return (
-                                            <tr>
-                                                <td>{item.call + ' - ' + item.name}</td>
-                                                <td><a href={'https://brandmeister.network/?page=repeater&id=' + item.ID} target="_blank">Home</a></td>
-                                                <td><a href={'https://brandmeister.network/?page=lh&ContextID=^' + item.ID + '$'} target="_blank">LH</a></td>
-                                            </tr>
-                                        )
-                                    })}
-                                </tbody>
-                            </Table>
-                            
-                        </CardBody>
-                    </Card> 
+                <Row>                 
+                    <RepeaterList title="Repeaters - Home" list={repeaters.filter(item => item.category.includes("Home"))} />
+                    <RepeaterList title="Repeaters - Kansas City Trip" list={repeaters.filter(item => item.category.includes("KC"))} />
+                    <RepeaterList title="Repeaters - Wisconsin Trip" list={repeaters.filter(item => item.category.includes("WI"))} />
                     {categories.map(category => {
                         return (
                                 <FavoritesCard style={{maxWidth:400}}
