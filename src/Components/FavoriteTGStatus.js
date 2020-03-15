@@ -31,7 +31,7 @@ export default class FavoriteTGStatus extends React.Component {
         let statics = [];
         let states = [];
         this.state.favoriteTGs.forEach(item => {
-            if (item.category !== "International" && (item.ID < 310 || item.ID > 319)) {temp.push(this.buildTalkgroupRule(item.ID))}
+            if (item.category !== "International" &&  item.category !== "National") {temp.push(this.buildTalkgroupRule(item.ID))}
             if (item.static) {statics.push(this.buildTalkgroupRule(item.ID))}
         });
         let i;
