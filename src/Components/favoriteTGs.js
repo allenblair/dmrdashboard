@@ -60,10 +60,11 @@ const favoriteTGs = [
     {"name":"Sheffield Local","category":"Alabama","ID":310128},
     {"name":"Jonesboro Local","category":"Cities","ID":310514,"static":true},
     {"name":"Memphis Local","category":"Cities","ID":314706},
+    {"name":"Chattanooga Local","category":"Cities","ID":314722},
     {"name":"Reddit","category":"Other/Topics","ID":98003},
+    {"name":"World Events","category":"Other/Topics","ID":98009},
     {"name":"AE4G","category":"Personal TG","ID":3138607},
     {"name":"AB4CD","category":"Personal TG","ID":3138700}
-
 ];
 
 export default favoriteTGs;
