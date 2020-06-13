@@ -3,14 +3,16 @@ const repeaters = [
     {"name":"Somerville","call":"WR4JW","category":"Home","ID":310357},
     {"name":"Cullman","call":"N4UAI","category":"Home","ID":310127},
     {"name":"Sheffield","call":"N4GLE","category":"Home","ID":310128},
-    {"name":"Alabaster","call":"N4FIV","category":"Home","ID":310104},
     {"name":"Red Mtn","call":"KA5GET","category":"Home","ID":310177},
     {"name":"Helena","call":"KC4SIG","category":"Home","ID":310117},
-    {"name":"Trussville","call":"KC4ANB","category":"Home","ID":310120},
     {"name":"Nashville","call":"NE4MA","category":"Home","ID":311179},
     {"name":"Corinth, MS","call":"K5WHB","category":"KC","ID":312802},
     {"name":"Memphis, TN","call":"W4LET","category":"KC","ID":314706},
-    {"name":"Jonesboro, AR","call":"NZ5E","category":"KC","ID":310514},
+    {"name":"Jonesboro, AR","call":"K5NEA","category":"KC","ID":310514},
+    {"name":"Willow Springs, AR","call":"K0NXA","category":"KC","ID":311138},
+    {"name":"Harrison, AR","call":"W5NWA","category":"KC","ID":310502},
+    {"name":"Branson, MO Central","call":"K0NXA","category":"KC","ID":312938},
+    {"name":"Branson, MO North","call":"KC0M","category":"KC","ID":310095},
     {"name":"Springfield, MO","call":"K0NXA","category":"KC","ID":312919},
     {"name":"Boliver, MO","call":"WB0LVR","category":"KC","ID":312924},
     {"name":"Deepwater, MO","call":"W0DR","category":"KC","ID":312936},
@@ -23,8 +25,7 @@ const repeaters = [
     {"name":"Bowling Green, KY","call":"W4WSM","category":"WI","ID":312117},
     {"name":"Elizabethtown, KY","call":"KG4LHQ","category":"WI","ID":312107},
     {"name":"Indianapolis, IN","call":"W9AMT","category":"WI","ID":311845},
-    {"name":"West Lafayette, IN","call":"W9YB","category":"WI","ID":311822},
-    {"name":"Winthrop Harbor, IL","call":"KD9MDL","category":"WI","ID":3123647}
+    {"name":"West Lafayette, IN","call":"W9YB","category":"WI","ID":311822}
 ];
 
 export default repeaters;
