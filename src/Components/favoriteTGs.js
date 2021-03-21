@@ -64,7 +64,8 @@ const favoriteTGs = [
     {"name":"Reddit","category":"Other/Topics","ID":98003},
     {"name":"World Events","category":"Other/Topics","ID":98009},
     {"name":"AE4G","category":"Personal TG","ID":3138607},
-    {"name":"AB4CD","category":"Personal TG","ID":3138700}
+    {"name":"AB4CD","category":"Personal TG","ID":3138700},
+    {"name":"MBA2","category":"Alabama","ID":3172110}
 ];
 
 export default favoriteTGs;
