@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/dmrdashboard/static/css/main.c4dc2e11.chunk.css",
-    "main.js": "/dmrdashboard/static/js/main.17c70402.chunk.js",
-    "main.js.map": "/dmrdashboard/static/js/main.17c70402.chunk.js.map",
+    "main.css": "/dmrdashboard/static/css/main.18368ee3.chunk.css",
+    "main.js": "/dmrdashboard/static/js/main.38ff0156.chunk.js",
+    "main.js.map": "/dmrdashboard/static/js/main.38ff0156.chunk.js.map",
     "runtime-main.js": "/dmrdashboard/static/js/runtime-main.d7c6231f.js",
     "runtime-main.js.map": "/dmrdashboard/static/js/runtime-main.d7c6231f.js.map",
-    "static/js/2.6fab30b9.chunk.js": "/dmrdashboard/static/js/2.6fab30b9.chunk.js",
-    "static/js/2.6fab30b9.chunk.js.map": "/dmrdashboard/static/js/2.6fab30b9.chunk.js.map",
+    "static/js/2.aaa81993.chunk.js": "/dmrdashboard/static/js/2.aaa81993.chunk.js",
+    "static/js/2.aaa81993.chunk.js.map": "/dmrdashboard/static/js/2.aaa81993.chunk.js.map",
     "index.html": "/dmrdashboard/index.html",
-    "static/css/main.c4dc2e11.chunk.css.map": "/dmrdashboard/static/css/main.c4dc2e11.chunk.css.map",
-    "static/js/2.6fab30b9.chunk.js.LICENSE.txt": "/dmrdashboard/static/js/2.6fab30b9.chunk.js.LICENSE.txt",
+    "static/css/main.18368ee3.chunk.css.map": "/dmrdashboard/static/css/main.18368ee3.chunk.css.map",
+    "static/js/2.aaa81993.chunk.js.LICENSE.txt": "/dmrdashboard/static/js/2.aaa81993.chunk.js.LICENSE.txt",
     "static/media/logo.2d27ead7.svg": "/dmrdashboard/static/media/logo.2d27ead7.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d7c6231f.js",
-    "static/js/2.6fab30b9.chunk.js",
-    "static/css/main.c4dc2e11.chunk.css",
-    "static/js/main.17c70402.chunk.js"
+    "static/js/2.aaa81993.chunk.js",
+    "static/css/main.18368ee3.chunk.css",
+    "static/js/main.38ff0156.chunk.js"
   ]
 }
